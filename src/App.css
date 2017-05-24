@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    background: url(img/background-video.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    background: url(img/background-video.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    background: url(img/background-video768.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 100%;
+    background: url(img/background-video1440.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .container__video {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    display: block;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: 0;
+  }
+}

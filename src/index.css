@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'MuseoSansRounded-900';
+  src: url('../public/fonts/337D35_0_0.eot');
+  src: url('../public/fonts/337D35_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../public/fonts/337D35_0_0.woff2') format('woff2'),
+       url('../public/fonts/337D35_0_0.woff') format('woff'),
+       url('../public/fonts/337D35_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MuseoSansRounded-100';
+  src: url('../public/fonts/337D35_1_0.eot');
+  src: url('../public/fonts/337D35_1_0.eot?#iefix') format('embedded-opentype'),
+       url('../public/fonts/337D35_1_0.woff2') format('woff2'),
+       url('../public/fonts/337D35_1_0.woff') format('woff'),
+       url('../public/fonts/337D35_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../public/fonts/PlayfairDisplay-BoldItalic.ttf');
+}
+
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MuseoSansRounded-900';
+  overflow: hidden;
+}

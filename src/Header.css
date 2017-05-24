@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.header__hamburger {
+  margin-top: 9px;
+  margin-right: 23px;
+  width: 15px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 69px;
+  height: 31px;
+  background: url(img/logo-garage-white.svg) no-repeat;
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding-top: 17px;
+  }
+
+  .header--leftPanelOpen {
+    transform: translate3d(187px, 0, 0);
+  }
+
+  .header__hamburger--leftPanelOpen {
+    margin-right: 63px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .header {
+    padding-top: 17px;
+  }
+
+  .header--leftPanelOpen {
+    transform: translate3d(207px, 0, 0);
+  }
+
+  .header__hamburger--leftPanelOpen {
+    margin-right: 63px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .header {
+    padding-top: 26px;
+  }
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding-top: 26px;
+  }
+}

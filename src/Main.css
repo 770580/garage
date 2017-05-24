@@ -1,0 +1,123 @@
+.choice {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.choice__area {
+  display: flex;
+  align-items: center;
+  transition: padding-left 0.3s ease;
+}
+
+.choice__title {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.choice__areaRight {
+  justify-content: flex-end;
+}
+
+@media (max-width: 320px) {
+  .choice--leftPanelOpen {
+    transform: translate3d(40vw, 0, 0);
+  }
+
+  .choice__areaLeft {
+      margin-left: -4px;
+  }
+
+  .choice__areaRight {
+      margin-right: -4px;
+      text-align: right;
+  }
+
+  .choice__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .choice--leftPanelOpen {
+    transform: translate3d(40vw, 0, 0);
+  }
+
+  .choice__areaLeft {
+      margin-left: -5px;
+  }
+
+  .choice__areaRight {
+      margin-right: -5px;
+      text-align: right;
+  }
+
+  .choice__title {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: 1.7px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .choice--leftPanelOpen {
+    transform: translate3d(calc(34vw + 50px), 0, 0);
+  }
+
+  .choice__area {
+    width: 35vw;
+  }
+
+  .choice__areaLeft {
+    margin-left: 2.6vw;
+  }
+
+  .choice__areaRight {
+      margin-right: 2.6vw;
+      text-align: right;
+  }
+
+  .choice__title {
+    font-size: 3.9vw;
+    line-height: 5.2vw;
+    font-weight: 900;
+    letter-spacing: 0.39vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .choice--leftPanelOpen {
+    transform: translate3d(20vw, 0, 0);
+  }
+
+  .choice__area {
+    width: 35vw;
+  }
+
+  .choice__areaLeft {
+    padding-left: 24px;
+  }
+
+  .choice__areaLeft--leftPanelOpen {
+    padding-left: 124px;
+  }
+
+  .choice__areaRight {
+    padding-right: 24px;
+    text-align: right;
+  }
+
+  .choice__title {
+    font-size: 3.47vw;
+    line-height: 4.17vw;
+    font-weight: 900;
+    letter-spacing: 0.35vw;
+  }
+}
